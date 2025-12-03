@@ -10,6 +10,7 @@ import {
     Legend
 } from 'chart.js';
 import { Line } from 'react-chartjs-2';
+import { API_URL } from './config';
 import './ChartViewer.css';
 
 ChartJS.register(
@@ -39,7 +40,7 @@ const ChartViewer = () => {
         setLoading(true);
         setError(null);
         try {
-            const response = await fetch(`http://localhost:3000/api/dataset/${id}`);
+            const response = await fetch(`${API_URL}/api/dataset/${id}`);
             if (!response.ok) {
                 throw new Error('Failed to fetch data');
             }
