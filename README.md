@@ -49,7 +49,6 @@ docker build --build-arg API_URL=http://api.example.com -t dummy-frontend:latest
 ```bash
 docker run -d \
   --name dummy-backend \
-  -e ELASTICSEARCH_URL=http://dummy-elasticsearch:9200 \
   -p 3000:3000 \
   --network dummy-network \
   dummy-backend:latest
