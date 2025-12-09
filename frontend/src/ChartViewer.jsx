@@ -127,7 +127,7 @@ const ChartViewer = () => {
     return (
         <div className="chart-viewer-container">
             <div className="chart-header">
-                <h2>Dummy Website</h2>
+                <h2>JohnWebsite</h2>
                 <p className="chart-counter">
                     Chart {currentIndex} of {totalCharts}
                 </p>
